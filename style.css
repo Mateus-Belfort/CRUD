@@ -13,7 +13,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0,0,0,0.1);
+  background-color: rgba(12, 3, 141, 0.181);
 }
 
 button {
@@ -24,47 +24,49 @@ button {
   width: 90%;
   height: 80%;
   border-radius: 10px;
-  background: white;
+  background: #fff;
 }
 
 .header {
   min-height: 70px;
   display: flex;
   align-items: center;
+  flex-direction: row;
   justify-content: space-between;
   margin: auto 12px;
 }
 
-.header span {
+.tittleHeader {
   font-weight: 900;
   font-size: 20px;
   word-break: break-all;
 }
+
 
 #new {
   font-size: 16px;
   padding: 8px;
   border-radius: 5px;
   border: none;
-  color: white;
-  background-color: rgb(57, 57, 226);
+  color: #fff;
+  background-color: rgb(16, 36, 168);
 }
 
 .divTable {
   padding: 10px;
-  width: auto; 
-  height:inherit; 
-  overflow:auto;
+  width: auto;
+  height: inherit;
+  overflow: auto;
 }
 
 .divTable::-webkit-scrollbar {
   width: 12px;
-  background-color: whitesmoke; 
+  background-color: whitesmoke;
 }
 
 .divTable::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: darkgray; 
+  background-color: darkgray;
 }
 
 table {
@@ -79,7 +81,7 @@ thead {
 }
 
 tr {
-  border-bottom: 1px solid rgb(238, 235, 235)!important;
+  border-bottom: 1px solid rgb(238, 235, 235) !important;
 }
 
 tbody tr td {
@@ -99,7 +101,7 @@ tbody tr {
 }
 
 thead tr th.acao {
-  width: 100px!important;
+  width: 100px !important;
   text-align: center;
 }
 
@@ -111,7 +113,7 @@ tbody tr td.acao {
   body {
     font-size: 10px;
   }
-  
+
   .header span {
     font-size: 15px;
   }
@@ -122,11 +124,11 @@ tbody tr td.acao {
   }
 
   thead tr th.acao {
-    width: auto!important;
+    width: auto !important;
   }
-  
+
   td button i {
-    font-size: 20px!important;
+    font-size: 20px !important;
   }
 
   td button i:first-child {
@@ -134,11 +136,11 @@ tbody tr td.acao {
   }
 
   .modal {
-    width: 90%!important;
+    width: 90% !important;
   }
 
   .modal label {
-    font-size: 12px!important;
+    font-size: 12px !important;
   }
 }
 
@@ -160,7 +162,7 @@ tbody tr td.acao {
   flex-direction: column;
   align-items: center;
   padding: 40px;
-  background-color: white;
+  background-color: #fff;
   border-radius: 10px;
   width: 50%;
 }
@@ -173,7 +175,7 @@ tbody tr td.acao {
 .modal input {
   width: 100%;
   outline: none;
-  padding: 5px 10px; 
+  padding: 5px 10px;
   width: 100%;
   margin-bottom: 20px;
   border-top: none;
@@ -185,12 +187,12 @@ tbody tr td.acao {
   width: 100%;
   margin: 10px auto;
   outline: none;
-  border-radius: 20px; 
-  padding: 5px 10px; 
+  border-radius: 20px;
+  padding: 5px 10px;
   width: 100%;
   border: none;
-  background-color: rgb(57, 57, 226);
-  color: white;
+  background-color: rgb(16, 36, 168);
+  color: #fff;
 }
 
 .active {
@@ -206,6 +208,7 @@ tbody tr td.acao {
     opacity: 0;
     transform: translate3d(0, -60px, 0);
   }
+
   to {
     opacity: 1;
     transform: translate3d(0, 0, 0);

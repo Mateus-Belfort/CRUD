@@ -27,7 +27,7 @@ function openModal(edit = false, index = 0) {
     sFuncao.value = ''
     sSalario.value = ''
   }
-  
+
 }
 
 function editItem(index) {
@@ -39,6 +39,7 @@ function deleteItem(index) {
   itens.splice(index, 1)
   setItensBD()
   loadItens()
+  confirm("Deseja Realmente excluir este funcionario?")
 }
 
 function insertItem(item, index) {
@@ -59,7 +60,7 @@ function insertItem(item, index) {
 }
 
 btnSalvar.onclick = e => {
-  
+
   if (sNome.value == '' || sFuncao.value == '' || sSalario.value == '') {
     return
   }
@@ -71,7 +72,7 @@ btnSalvar.onclick = e => {
     itens[id].funcao = sFuncao.value
     itens[id].salario = sSalario.value
   } else {
-    itens.push({'nome': sNome.value, 'funcao': sFuncao.value, 'salario': sSalario.value})
+    itens.push({ 'nome': sNome.value, 'funcao': sFuncao.value, 'salario': sSalario.value })
   }
 
   setItensBD()
